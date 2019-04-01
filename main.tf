@@ -77,8 +77,7 @@ resource "tfe_policy_set" "development" {
   ]
 
   workspace_external_ids = [
-    "${local.workspaces["app-dev"]}",
-    "${local.workspaces["app-dev-sandbox-bennett"]}",
+    "${local.workspaces["app-dev"]}"
   ]
 }
 
@@ -92,7 +91,7 @@ resource "tfe_policy_set" "sentinel" {
   ]
 
   workspace_external_ids = [
-    "${local.workspaces["tfe-policies"]}",
+    "${local.workspaces["Sentinel-Training"]}",
   ]
 }
 
